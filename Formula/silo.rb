@@ -5,16 +5,16 @@ class Silo < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/265866/silo/releases/download/v0.1.0/silo-aarch64-apple-darwin.tar.xz"
-      sha256 "b4269154ed8b57427398bd8de827da43895bc9f48ccdf700225996145bfb759f"
+      sha256 "13b005961fd82b232c1643327aca4a03cea5ac7b0fec8a0f3ee78af24670a28f"
     end
     if Hardware::CPU.intel?
       url "https://github.com/265866/silo/releases/download/v0.1.0/silo-x86_64-apple-darwin.tar.xz"
-      sha256 "089e87d19fea73a1dd0d6a56e2df248f3f4c8512256cbe4e28ff2a36e8721860"
+      sha256 "96c70bb20b7871540a5024757f3d053a5fcf606d9944ab8cc2c3a3a89ad6f139"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/265866/silo/releases/download/v0.1.0/silo-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "47bb3af3920c17e14e92a9c165bd571a133f3cb07605e5669772efe07be4394b"
+    sha256 "57e804f6834139ee0aa127a90fa5e9746499f50bea878177069ca3d2776f1ce0"
   end
   license "GPL-3.0-or-later"
 
