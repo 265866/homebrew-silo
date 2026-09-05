@@ -1,20 +1,20 @@
 class Silo < Formula
   desc "SOL-only Solana wallet manager TUI"
   homepage "https://github.com/265866/silo"
-  version "0.1.10"
+  version "0.1.11"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/265866/silo/releases/download/v0.1.10/silo-aarch64-apple-darwin.tar.xz"
-      sha256 "80dee0e8922451763f3e9e559bd2bb380af55daa47bf5a0fa997e7c5220d36f4"
+      url "https://github.com/265866/silo/releases/download/v0.1.11/silo-aarch64-apple-darwin.tar.xz"
+      sha256 "486709f448a805db62500e1a447010dc78535ed677e50478cf3c82ee72177775"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/265866/silo/releases/download/v0.1.10/silo-x86_64-apple-darwin.tar.xz"
-      sha256 "48ef41e8c8071b3f5093b7c4869ff0759f9264df0e0132af61535609cbb08f91"
+      url "https://github.com/265866/silo/releases/download/v0.1.11/silo-x86_64-apple-darwin.tar.xz"
+      sha256 "d14fcbc973f5a0f2002b40ec6445ca06f852b58558d55aaa8fd24ed8e250396e"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/265866/silo/releases/download/v0.1.10/silo-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "e994ad9748580bc5c55a2f58296fb6d7791e665e27160ccf5ec6cfe8bb0b856b"
+    url "https://github.com/265866/silo/releases/download/v0.1.11/silo-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "5a3756ea47602d0cac1e31087de75e4b70930b039a608abdbb7bfcaf4277e2a3"
   end
   license "GPL-3.0-or-later"
 
